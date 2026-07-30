@@ -1,0 +1,67 @@
+# --- Core ML / data ---
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+tqdm
+rich
+
+# --- Training / DL helpers (works great with PyTorch) ---
+torchmetrics
+
+# --- Hugging Face (common for NLP/LLM work) ---
+transformers
+datasets
+accelerate
+tokenizers
+safetensors
+
+# --- LangChain core + integrations ---
+# LangChain install is "pip install -U langchain" and integrations live in separate packages.  :contentReference[oaicite:3]{index=3}
+langchain
+langchain-core
+langchain-community
+langchain-text-splitters
+
+# --- Common LangChain provider packages (pick what you use) ---
+langchain-google-genai
+
+# --- Model/API SDKs (needed depending on provider) ---
+google-generativeai
+
+# --- Vector DB / retrieval (pick one) ---
+chromadb
+# qdrant-client
+# weaviate-client
+# pinecone
+
+# --- Embeddings / reranking (optional but common) ---
+sentence-transformers
+
+# --- Web / parsing / scraping (optional) ---
+httpx
+beautifulsoup4
+lxml
+
+# --- App/dev niceties ---
+python-dotenv
+pydantic
+pyyaml
+jupyter
+ipykernel
+pytest
+
+fastapi
+uvicorn
+torch
+numpy
+scikit-learn
+joblib
+xgboost
+lightgbm
+catboost
+python-dotenv
+langchain
+langchain-google-genai
+google-generativeai
