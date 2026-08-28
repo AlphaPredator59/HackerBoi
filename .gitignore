@@ -1,13 +1,33 @@
-# big artifacts
+# Large artifacts
 artifacts/X_scaled.dat
 artifacts/train_benign_idx.npy
 artifacts/*.dat
 artifacts/**/*.dat
 artifacts/*.npy
 artifacts/**/*.npy
-.env
+
+# Virtual environments
+.venv/
 venv/
+
+# Environment variables
+.env
+
+# Python
 __pycache__/
 *.pyc
-.DS_Store
+*.pyo
+*.pyd
+
+# Dataset
+solarmainframe/
+
+# Generated analysis reports
+vae_analysis_report.csv
+vae_analysis_report.json
+validation_report.json
+
+# IDE / OS
 .idea/
+.vscode/
+.DS_Store

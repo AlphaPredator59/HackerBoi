@@ -225,7 +225,11 @@ class ThreatPipeline:
             k = 0
             for i, f in enumerate(flags):
                 if f:
-                    attack_label[i] = labels[k]
+                    pred_lbl = str(labels[k])
+                    if pred_lbl.strip().lower() == "benign":
+                        attack_label[i] = "Unknown Anomaly"
+                    else:
+                        attack_label[i] = pred_lbl
                     attack_conf[i] = float(confs[k])
                     k += 1
 
