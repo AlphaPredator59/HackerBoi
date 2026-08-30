@@ -1,33 +1,55 @@
-# Large artifacts
-artifacts/X_scaled.dat
-artifacts/train_benign_idx.npy
-artifacts/*.dat
-artifacts/**/*.dat
-artifacts/*.npy
-artifacts/**/*.npy
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
 
-# Virtual environments
+# Python virtual environments
 .venv/
 venv/
+env/
 
-# Environment variables
-.env
-
-# Python
+# Python cache and build output
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 
-# Dataset
+# Local ML / model artifacts
+artifacts/
+artifacts/**
+*.pt
+*.pth
+*.pkl
+*.cbm
+*.dat
+*.npy
+*.npz
+
+# Large or generated datasets
 solarmainframe/
+ml/splits/
+*.csv
 
-# Generated analysis reports
+# Generated reports / analysis outputs
 vae_analysis_report.csv
 vae_analysis_report.json
 validation_report.json
+*.log
+
+# Node / frontend
+node_modules/
+dist/
+build/
+.vite/
 
 # IDE / OS
 .idea/
 .vscode/
 .DS_Store
+Thumbs.db
